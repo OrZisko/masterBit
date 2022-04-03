@@ -1,7 +1,0 @@
-<section class="contacts-page">
-    <div class="contacts-control">
-        <filter (onSetFilter)="loadContacts($event)"></filter>
-        <a [routerLink]="'edit'"><img src="./assets/icons/plus.png"></a>
-    </div>
-    <contacts-list [contacts]="contacts$|async"></contacts-list>
-</section>
