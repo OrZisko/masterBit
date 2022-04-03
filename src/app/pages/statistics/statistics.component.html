@@ -1,0 +1,22 @@
+<div class="stats-page">
+    <h1>Hi, {{user$.name}}</h1>
+    <div class="coins-info">
+        <div class="user-coins-info">
+            <h4>CURRENT BALANCE</h4>
+            <p>BIT:&#8383; {{coinsInBit}}</p>
+            <p>USD:{{user$.coins | currency: 'USD'}}</p>
+        </div>
+        <div class="gen-coins-info">
+            <h4>CURRENT BTC USD <span class="tag">live</span></h4>
+            <p>{{1/(coinsInBit/user$.coins) | currency: 'USD'}}</p>
+        </div>
+    </div>
+    <div class="chart-container">
+        <h4>Market Price</h4>
+        <div echarts [options]="marketPriceOptions" class="demo-chart"></div>
+    </div>
+    <div class="chart-container">
+        <h4>Avrage Block Size</h4>
+        <div echarts [options]="avgBlockSizeOptions" class="demo-chart"></div>
+    </div>
+</div>

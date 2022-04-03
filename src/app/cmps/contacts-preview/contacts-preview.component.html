@@ -1,0 +1,5 @@
+<article class="contact-preview" [routerLink]="contact._id">
+    <img src="https://robohash.org/{{contact._id}}?set=set2">
+    <h1>{{contact.name}}</h1>
+    <a [routerLink]="['edit', contact._id]">Edit</a>
+</article>

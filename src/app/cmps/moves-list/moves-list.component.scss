@@ -1,0 +1,15 @@
+.moves-container {
+    font-size: 24px;
+    .move {
+        display: grid;
+        padding: 5px;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin-bottom: 5px;
+        span {
+            border-bottom: 1px solid black;
+        }
+        &.table-header {
+            font-weight: bold;
+        }
+    }
+}

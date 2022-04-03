@@ -1,0 +1,9 @@
+<section class="transfer-cmp">
+    <h5>Transfer money to {{contactName}}</h5>
+    <form (ngSubmit)="onTransfer.emit(amount)">
+        <label for="amount">
+            <input type="number" [(ngModel)]="amount" name="amount" placeholder="Sum to transfer">
+        </label>
+        <button>Transfer</button>
+    </form>
+</section>
